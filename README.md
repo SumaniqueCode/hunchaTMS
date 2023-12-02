@@ -24,15 +24,15 @@ The TASK MANAGEMENT SYSTEM is made by SUMAN REGMI includes the following things.
 		-Add database name as "tsmhuncha"
 
 		Routes:
-			http://localhost:8000/addUsers			for adding new users
-			http://localhost:8000/updateUserData		for updating user data
-			http://localhost:8000/addProjects		for adding new Project
-			http://localhost:8000/updateProjects/{id}	for updating project details
+			http://localhost:8000/api/addUsers			for adding new users
+			http://localhost:8000/api/updateUserData		for updating user data
+			http://localhost:8000/api/addProjects			for adding new Project
+			http://localhost:8000/api/updateProjects/{id}		for updating project details
 
-			http://localhost:8000/getUserData		for fetching userdata
-			http://localhost:8000/getProjectData		for fetching project Data
-			http://localhost:8000/getProjectDetails/{id}	for fetching project Details with provided id
-			http://localhost:8000/deleteUser/{id}		for deleting user
-			http://localhost:8000/deleteProject/{id}	for deleting project
+			http://localhost:8000/api/getUserData			for fetching userdata
+			http://localhost:8000/api/getProjectData		for fetching project Data
+			http://localhost:8000/aoi/getProjectDetails/{id}	for fetching project Details with provided id
+			http://localhost:8000/api/deleteUser/{id}		for deleting user
+			http://localhost:8000/api/deleteProject/{id}		for deleting project
 
 The Project is under development and many features are yet to be added.
