@@ -20,7 +20,7 @@ The TASK MANAGEMENT SYSTEM is made by SUMAN REGMI includes the following things.
 
 	2. Backend
 		-The backend is made using laravel.
-		-Run cmd "php artisan serve" and database to access the api.
+		-Run cmd "php artisan serve" and "php artisan migrate" and database software to access the api.
 		-Add database name as "tsmhuncha"
 
 		Routes:
