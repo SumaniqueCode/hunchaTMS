@@ -14,7 +14,7 @@ class TaskController extends Controller
         return Validator::make($projectData, [
             'projectName' => 'required|string|min:5|max:20',
             'projectDesc' => 'required|string|min:10|max:300',
-            'projectDeadline' => 'required',
+            'members' => 'required|string|min:5|max:25',
 
         ]);
     }
