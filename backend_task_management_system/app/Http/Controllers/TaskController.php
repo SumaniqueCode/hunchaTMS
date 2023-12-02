@@ -14,7 +14,7 @@ class TaskController extends Controller
         return Validator::make($projectData, [
             'projectName' => 'required|string|min:5|max:20',
             'projectDesc' => 'required|string|min:10|max:300',
-            'members' => 'required|string|min:5|max:25',
+            'members' => 'required|string|min:5|max:300',
 
         ]);
     }
@@ -93,7 +93,7 @@ class TaskController extends Controller
 
     public function projectDetails(Task $task, $id)
     {
-        $tasks = Task::find($id)->first();
+        $tasks = Task::find($id);
     
         if ($tasks->count() > 0) {
             return response()->json([

@@ -80,10 +80,17 @@ const AdminProject = () => {
                   <tbody key={task.id}>
                     <tr class="bg-gray-300 border-b border-gray-200 text-gray-900 hover:bg-blue-300">
                       <td scope="row" class="px-6 text-base font-medium whitespace-nowrap dark:text-blue-100">{task.projectName}</td>
-                      <td scope="row" class="px-6 text-base font-medium whitespace-nowrap dark:text-blue-100">{task.projectDesc}</td>
+                      <td scope="row" class="px-6 text-base font-medium whitespace-nowrap dark:text-blue-100">
+                        {task.projectDesc.length > 50 // Adjust the length as needed
+                        ? `${task.projectDesc.slice(0, 30)}...`
+                        : task.projectDesc}</td>
                       <td scope="row" class="px-6 text-base font-medium whitespace-nowrap dark:text-blue-100">{task.projectDeadline}</td>
                       <td scope="row" class="px-6 text-base font-medium whitespace-nowrap dark:text-blue-100">{task.projectStatus}</td>
-                      <td scope="row" class="px-6 text-base font-medium whitespace-nowrap dark:text-blue-100">{task.members}</td>
+                      <td scope="row" class="px-6 text-base font-medium whitespace-nowrap dark:text-blue-100">
+                      {task.members.length > 50 // Adjust the length as needed
+                        ? `${task.members.slice(0, 20)}...`
+                        : task.members} 
+                      </td>
 
                       <td scope="row" class="px-6 py-1 font-medium whitespace-nowrap dark:text-blue-100">
                         <NavLink to={`/viewProjectDetails/${task.id}`} className=" mx-2 text-white bg-gray-700 hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800">View</NavLink>
