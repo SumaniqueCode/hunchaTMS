@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import UserNavbar from "../Layout/adminNavbar";
 import UserFooter from "../Layout/adminFooter";
+import UserIcon from "../../Images/user.png"
+import ClipboardIcon from "../../Images/clipboard.png"
 
 const AdminDashboard = () => {
   const [users, setUsers] = useState([]);
@@ -52,18 +54,20 @@ const AdminDashboard = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 m-5 pb-52">
   {/* Number of Users */}
   <div className="bg-gradient-to-r m-3 from-indigo-700 to-indigo-500 text-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
-    <div className="border-b-2 border-white pb-4 mb-6">
-      <h2 className="text-4xl font-extrabold tracking-wide">Total Users</h2>
+    <div className="border-b-2 border-white mb-6 justify-between flex mx-5">
+      <h2 className="text-3xl font-bold tracking-wide my-auto">Total Users</h2>
+      <img className="w-16" src={UserIcon}/>
     </div>
-    <p className="text-6xl font-extrabold">{users.length}</p>
+    <p className="text-4xl font-bold text-right mx-5">{users.length}</p>
   </div>
 
   {/* Number of Projects */}
   <div className="m-3 bg-gradient-to-r from-teal-600 to-teal-400 text-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105">
-    <div className="border-b-2 border-white pb-4 mb-6">
-      <h2 className="text-4xl font-extrabold tracking-wide">Total Projects</h2>
+    <div className="border-b-2 border-white mb-6 flex justify-between mx-5">
+      <h2 className="text-3xl font-bold tracking-wide my-auto">Total Projects</h2>
+      <img className="w-16" src={ClipboardIcon} />
     </div>
-    <p className="text-6xl font-extrabold">{tasks.length}</p>
+    <p className="text-4xl font-bold text-right mx-5">{tasks.length}</p>
   </div>
 </div>
 

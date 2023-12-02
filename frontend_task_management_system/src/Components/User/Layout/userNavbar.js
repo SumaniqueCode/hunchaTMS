@@ -28,8 +28,8 @@ const AdminNavbar = () => {
           {menuOpen && (
             <div className="absolute w-72 top-full right-0 mt-4 bg-blue-600 border border-white p-2 rounded-lg shadow-md">
               <NavLink to="/admin" className="block text-white hover:bg-white hover:text-black hover:font-bold p-2 rounded"> Home </NavLink>
-              <NavLink to="/adminProjects" className="block text-white hover:bg-white hover:text-black hover:font-bold p-2 rounded">All Projects</NavLink>
-              <NavLink to="/users" className="block text-white hover:bg-white hover:text-black hover:font-bold p-2 rounded">Users</NavLink>
+              <NavLink to="/adminProjects" className="block border-t-2 text-white hover:bg-white hover:text-black hover:font-bold p-2 rounded">All Projects</NavLink>
+              <NavLink to="/users" className="block border-t-2 text-white hover:bg-white hover:text-black hover:font-bold p-2 rounded">Users</NavLink>
             </div>
           )}
         </div>
